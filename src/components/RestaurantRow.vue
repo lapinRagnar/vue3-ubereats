@@ -1,9 +1,9 @@
 <template>
   <div class="restaurant--row">
     <h2 class="title">Nos Restaurants</h2>
-    {{maVariable}}
+
     <div class="wrapper--card">
-      <RestaurantCard v-for="(card, index) in 3" :key="index" />
+      <RestaurantCard v-for="(card, index) in three_restaurant" :info_restaurant="card" :key="index" />
 
     </div>
 
@@ -17,9 +17,9 @@ import RestaurantCard from './RestaurantCard.vue'
 export default {
   name: 'RestaurantRow',
   components: { RestaurantCard },
-  props:{
-    maVariable: String
-  }
+    props: {
+        three_restaurant: Array
+    }
 }
 </script>
 
