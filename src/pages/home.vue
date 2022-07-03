@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <RestaurantRow/>
+    <RestaurantRow maVariable="la valeur de ma variables" />
   </div>
 </template>
 

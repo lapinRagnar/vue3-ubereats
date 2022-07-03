@@ -1,6 +1,7 @@
 <template>
   <div class="restaurant--row">
     <h2 class="title">Nos Restaurants</h2>
+    {{maVariable}}
     <div class="wrapper--card">
       <RestaurantCard v-for="(card, index) in 3" :key="index" />
 
@@ -16,6 +17,9 @@ import RestaurantCard from './RestaurantCard.vue'
 export default {
   name: 'RestaurantRow',
   components: { RestaurantCard },
+  props:{
+    maVariable: String
+  }
 }
 </script>
 
