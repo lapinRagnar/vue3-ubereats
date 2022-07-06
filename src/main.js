@@ -3,9 +3,11 @@ import { createRouter, createWebHashHistory } from 'vue-router'
 import App from './App.vue'
 
 import HomePage from './pages/home'
+import RestaurantPage from './pages/Restaurant'
 
 const routes = [
-    {path: '/', component: HomePage}
+    {path: '/', component: HomePage},
+    {path: '/restaurant', component: RestaurantPage},
 ]
 
 const router = createRouter({
