@@ -21,7 +21,6 @@ export default {
     info_restaurant: Object
   },
   setup(props){
-    console.log(props.info_restaurant);
     const changeBackground = computed(
         () => {
         return {
